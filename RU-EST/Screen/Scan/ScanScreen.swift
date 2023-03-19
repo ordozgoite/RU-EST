@@ -6,21 +6,24 @@
 //
 
 import SwiftUI
+import AudioToolbox
 
 struct ScanScreen: View {
     
-    @State private var scannedCode: String?
+    @ObservedObject private var scanVM = ScanViewModel()
     
     var body: some View {
         ZStack {
-            BarcodeScannerView(scannedCode: $scannedCode)
+            BarcodeScannerView(scannedCode: $scanVM.scannedCode)
+                .ignoresSafeArea()
             
-            VStack {
-                if let scannedCode = scannedCode {
-                    ProgressView()
-                } else {
-                    ScanOverlay()
-                }
+            ScanOverlay()
+            
+            if scanVM.isLoading {
+                LoadingView()
+                    .onAppear {
+                        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+                    }
             }
         }
     }

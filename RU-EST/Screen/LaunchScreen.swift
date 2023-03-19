@@ -19,7 +19,7 @@ struct LaunchScreen: View {
                 ZStack {
                     Image("uea-logo")
                         .resizable()
-                        .frame(width: 224, height: 224)
+                        .frame(width: 200, height: 200)
                 }
             }
         }

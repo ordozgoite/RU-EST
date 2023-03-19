@@ -97,7 +97,9 @@ class BarcodeScannerViewController: UIViewController {
     }
     
     private func startRunningCaptureSession() {
-        captureSession.startRunning()
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            self?.captureSession.startRunning()
+        }
     }
     
     private func stopRunningCaptureSession() {

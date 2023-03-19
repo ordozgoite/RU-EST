@@ -32,6 +32,9 @@ struct LoadingView: View {
                     .scaleEffect(circle3Animating ? 1 : 0.5)
                     .animation(Animation.easeInOut(duration: 0.8).repeatForever(autoreverses: true).delay(0.6))
             }
+            .background(
+                Color.white.frame(width: 100, height: 100).cornerRadius(25)
+            )
             .onAppear {
                 circle1Animating = true
                 circle2Animating = true

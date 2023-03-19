@@ -24,6 +24,12 @@
 		EDF4A0C629C56F0F008F6C84 /* BarCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0C529C56F0F008F6C84 /* BarCodeScannerView.swift */; };
 		EDF4A0C829C57CAD008F6C84 /* ScanOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0C729C57CAD008F6C84 /* ScanOverlay.swift */; };
 		EDF4A0CA29C57E8B008F6C84 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0C929C57E8B008F6C84 /* LoadingView.swift */; };
+		EDF4A0CD29C62224008F6C84 /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0CC29C62224008F6C84 /* ScanViewModel.swift */; };
+		EDF4A0D029C62651008F6C84 /* ConfirmOrderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0CF29C62651008F6C84 /* ConfirmOrderScreen.swift */; };
+		EDF4A0D229C636AA008F6C84 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0D129C636AA008F6C84 /* View+Extensions.swift */; };
+		EDF4A0D529C639DE008F6C84 /* PaymentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0D429C639DE008F6C84 /* PaymentScreen.swift */; };
+		EDF4A0D729C63CE3008F6C84 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0D629C63CE3008F6C84 /* Sizes.swift */; };
+		EDF4A0DA29C641A4008F6C84 /* OrderCompleteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0D929C641A4008F6C84 /* OrderCompleteScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +51,12 @@
 		EDF4A0C529C56F0F008F6C84 /* BarCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerView.swift; sourceTree = "<group>"; };
 		EDF4A0C729C57CAD008F6C84 /* ScanOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOverlay.swift; sourceTree = "<group>"; };
 		EDF4A0C929C57E8B008F6C84 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		EDF4A0CC29C62224008F6C84 /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
+		EDF4A0CF29C62651008F6C84 /* ConfirmOrderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOrderScreen.swift; sourceTree = "<group>"; };
+		EDF4A0D129C636AA008F6C84 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		EDF4A0D429C639DE008F6C84 /* PaymentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentScreen.swift; sourceTree = "<group>"; };
+		EDF4A0D629C63CE3008F6C84 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		EDF4A0D929C641A4008F6C84 /* OrderCompleteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompleteScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,12 @@
 			isa = PBXGroup;
 			children = (
 				EDF4A0BA29C53D9B008F6C84 /* LaunchScreen.swift */,
-				EDF4A0C229C5590D008F6C84 /* Scan */,
-				EDF4A0B229B5B271008F6C84 /* Orders */,
 				EDF4A0B129B5B255008F6C84 /* Login */,
-				EDF4A0C529C56F0F008F6C84 /* BarCodeScannerView.swift */,
+				EDF4A0B229B5B271008F6C84 /* Orders */,
+				EDF4A0C229C5590D008F6C84 /* Scan */,
+				EDF4A0CE29C625DC008F6C84 /* Confirm Order */,
+				EDF4A0D329C639C8008F6C84 /* Payment */,
+				EDF4A0D829C64183008F6C84 /* Order Complete */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -114,6 +128,7 @@
 			children = (
 				EDF4A0AA29B2FB52008F6C84 /* Color+Extensions.swift */,
 				EDF4A0C029C546D9008F6C84 /* Date+Extensions.swift */,
+				EDF4A0D129C636AA008F6C84 /* View+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -122,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				EDF4A0AD29B2FC03008F6C84 /* HexColor.swift */,
+				EDF4A0D629C63CE3008F6C84 /* Sizes.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -155,9 +171,9 @@
 		EDF4A0BC29C54604008F6C84 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				EDF4A0BD29C54620008F6C84 /* Orders */,
-				EDF4A0C729C57CAD008F6C84 /* ScanOverlay.swift */,
 				EDF4A0C929C57E8B008F6C84 /* LoadingView.swift */,
+				EDF4A0BD29C54620008F6C84 /* Orders */,
+				EDF4A0CB29C61FD6008F6C84 /* Scan */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -174,8 +190,42 @@
 			isa = PBXGroup;
 			children = (
 				EDF4A0C329C5591F008F6C84 /* ScanScreen.swift */,
+				EDF4A0CC29C62224008F6C84 /* ScanViewModel.swift */,
 			);
 			path = Scan;
+			sourceTree = "<group>";
+		};
+		EDF4A0CB29C61FD6008F6C84 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4A0C529C56F0F008F6C84 /* BarCodeScannerView.swift */,
+				EDF4A0C729C57CAD008F6C84 /* ScanOverlay.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		EDF4A0CE29C625DC008F6C84 /* Confirm Order */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4A0CF29C62651008F6C84 /* ConfirmOrderScreen.swift */,
+			);
+			path = "Confirm Order";
+			sourceTree = "<group>";
+		};
+		EDF4A0D329C639C8008F6C84 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4A0D429C639DE008F6C84 /* PaymentScreen.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		EDF4A0D829C64183008F6C84 /* Order Complete */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4A0D929C641A4008F6C84 /* OrderCompleteScreen.swift */,
+			);
+			path = "Order Complete";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,16 +303,22 @@
 				EDF4A0AE29B2FC03008F6C84 /* HexColor.swift in Sources */,
 				EDF4A0C629C56F0F008F6C84 /* BarCodeScannerView.swift in Sources */,
 				EDF4A0BF29C54636008F6C84 /* OrderCell.swift in Sources */,
+				EDF4A0D029C62651008F6C84 /* ConfirmOrderScreen.swift in Sources */,
 				EDF4A0BB29C53D9B008F6C84 /* LaunchScreen.swift in Sources */,
 				EDF4A0B929B5B314008F6C84 /* Order.swift in Sources */,
+				EDF4A0D529C639DE008F6C84 /* PaymentScreen.swift in Sources */,
 				EDF4A0C829C57CAD008F6C84 /* ScanOverlay.swift in Sources */,
 				EDF4A0CA29C57E8B008F6C84 /* LoadingView.swift in Sources */,
+				EDF4A0D229C636AA008F6C84 /* View+Extensions.swift in Sources */,
 				EDF4A0A829B2F9AB008F6C84 /* LoginScreen.swift in Sources */,
 				EDF4A0B029B2FDB0008F6C84 /* LoginViewModel.swift in Sources */,
+				EDF4A0DA29C641A4008F6C84 /* OrderCompleteScreen.swift in Sources */,
 				EDF4A0C429C5591F008F6C84 /* ScanScreen.swift in Sources */,
 				EDF4A0B429B5B29C008F6C84 /* OrdersScreen.swift in Sources */,
+				EDF4A0D729C63CE3008F6C84 /* Sizes.swift in Sources */,
 				EDF4A0B629B5B2CC008F6C84 /* OrdersViewModel.swift in Sources */,
 				EDF4A0AB29B2FB52008F6C84 /* Color+Extensions.swift in Sources */,
+				EDF4A0CD29C62224008F6C84 /* ScanViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
