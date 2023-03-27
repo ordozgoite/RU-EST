@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OrdersScreen: View {
     
+    @EnvironmentObject var authVM: AuthViewModel
     @ObservedObject private var ordersVM = OrdersViewModel()
     
     var body: some View {
@@ -21,23 +22,22 @@ struct OrdersScreen: View {
                 // SIGN OUT
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(role: .destructive) {
-                        //
+                        authVM.authenticationState = .unauthenticated
                     } label: {
                         Image(systemName: "rectangle.portrait.and.arrow.right")
                             .foregroundColor(.red)
                     }
-
+                    
                 }
                 // BARCODE SCAN
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        //
-                    } label: {
+                    NavigationLink(destination: ScanScreen()) {
                         Image(systemName: "barcode.viewfinder")
                     }
                 }
             }
         }
+        .injectNavigationController(UIApplication.shared.windows.first?.rootViewController as? UINavigationController)
         .onAppear {
             ordersVM.getOrders()
         }

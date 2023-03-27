@@ -9,12 +9,14 @@ import SwiftUI
 
 struct LaunchScreen: View {
     
+    @EnvironmentObject var authVM: AuthViewModel
     @State private var moveToNext: Bool = false
     
     var body: some View {
         NavigationView{
             if moveToNext{
-                LoginScreen()
+                AuthenticatedScreen()
+                    .environmentObject(authVM)
             }else{
                 ZStack {
                     Image("uea-logo")
@@ -34,5 +36,6 @@ struct LaunchScreen: View {
 struct LaunchScreen_Previews: PreviewProvider {
     static var previews: some View {
         LaunchScreen()
+            .environmentObject(AuthViewModel())
     }
 }

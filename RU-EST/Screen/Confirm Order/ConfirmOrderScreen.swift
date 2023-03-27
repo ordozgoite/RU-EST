@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ConfirmOrderScreen: View {
+    
+    var customer: Customer
+    
     var body: some View {
         VStack {
+            
             Spacer()
             
-            Text("John Doe")
+            Text(customer.name)
                 .font(.title)
                 .fontWeight(.bold)
             
@@ -26,9 +30,7 @@ struct ConfirmOrderScreen: View {
             
             Spacer()
             
-            Button {
-                //
-            } label: {
+            NavigationLink(destination: PaymentScreen()) {
                 ZStack {
                     Rectangle()
                         .fill(Color.primaryColor)
@@ -47,6 +49,27 @@ struct ConfirmOrderScreen: View {
 
 struct ConfirmOrderScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmOrderScreen()
+        ConfirmOrderScreen(customer: Customer(_id: "1", name: "Victor Ordozgoite", barcode: "1"))
+    }
+}
+
+class NavigationControllerHolder {
+    weak var value: UINavigationController?
+}
+
+struct NavigationControllerKey: EnvironmentKey {
+    static let defaultValue: NavigationControllerHolder = NavigationControllerHolder()
+}
+
+extension EnvironmentValues {
+    var navigationController: UINavigationController? {
+        get { self[NavigationControllerKey.self].value }
+        set { self[NavigationControllerKey.self].value = newValue }
+    }
+}
+
+extension View {
+    func injectNavigationController(_ navigationController: UINavigationController?) -> some View {
+        return self.environment(\.navigationController, navigationController)
     }
 }

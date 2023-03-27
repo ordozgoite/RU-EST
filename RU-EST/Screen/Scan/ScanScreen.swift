@@ -25,6 +25,10 @@ struct ScanScreen: View {
                         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
                     }
             }
+            
+            NavigationLink(destination: ConfirmOrderScreen(customer: scanVM.customer ?? Customer(_id: "1", name: "Unknown", barcode: "1")), isActive: $scanVM.goToNext) {
+                EmptyView()
+            }
         }
     }
 }

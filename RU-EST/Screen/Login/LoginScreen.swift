@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginScreen: View {
     
-    @ObservedObject private var loginVM = LoginViewModel()
+    @EnvironmentObject var authVM: AuthViewModel
     
     var body: some View {
         VStack {
@@ -48,7 +48,7 @@ struct LoginScreen: View {
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundColor(.primaryColor)
-                TextField("E-mail", text: $loginVM.emailInput)
+                TextField("E-mail", text: $authVM.inputEmail)
                     .textFieldStyle(.roundedBorder)
             }
             
@@ -57,7 +57,7 @@ struct LoginScreen: View {
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundColor(.primaryColor)
-                TextField("Password", text: $loginVM.passwordInput)
+                TextField("Password", text: $authVM.inputPassword)
                     .textFieldStyle(.roundedBorder)
             }
         }
@@ -68,7 +68,7 @@ struct LoginScreen: View {
     @ViewBuilder
     private func LoginButton() -> some View {
         Button {
-            // Log in
+            authVM.authenticationState = .authenticated
         } label: {
             ZStack {
                 Rectangle()
@@ -87,5 +87,6 @@ struct LoginScreen: View {
 struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {
         LoginScreen()
+            .environmentObject(AuthViewModel())
     }
 }

@@ -1,0 +1,6 @@
+framework module Pods_RU_EST {
+  umbrella header "Pods-RU-EST-umbrella.h"
+
+  export *
+  module * { export * }
+}

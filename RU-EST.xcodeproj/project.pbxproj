@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		637CF83CA07085B78D356AA8 /* Pods_RU_EST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11DD0512748DB056A870D85 /* Pods_RU_EST.framework */; };
+		EDC996D129D1304A00FDA6CD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC996D029D1304A00FDA6CD /* Endpoint.swift */; };
+		EDC996D329D1309000FDA6CD /* RUEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC996D229D1309000FDA6CD /* RUEndpoints.swift */; };
+		EDC996D529D131B900FDA6CD /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC996D429D131B900FDA6CD /* HTTPClient.swift */; };
+		EDC996D829D131ED00FDA6CD /* RUServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC996D729D131ED00FDA6CD /* RUServices.swift */; };
+		EDC996DD29D13E6700FDA6CD /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC996DC29D13E6700FDA6CD /* Customer.swift */; };
 		EDF4A09929AC3F77008F6C84 /* RU_ESTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A09829AC3F77008F6C84 /* RU_ESTApp.swift */; };
 		EDF4A09D29AC3F79008F6C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF4A09C29AC3F79008F6C84 /* Assets.xcassets */; };
 		EDF4A0A029AC3F79008F6C84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF4A09F29AC3F79008F6C84 /* Preview Assets.xcassets */; };
@@ -30,9 +36,19 @@
 		EDF4A0D529C639DE008F6C84 /* PaymentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0D429C639DE008F6C84 /* PaymentScreen.swift */; };
 		EDF4A0D729C63CE3008F6C84 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0D629C63CE3008F6C84 /* Sizes.swift */; };
 		EDF4A0DA29C641A4008F6C84 /* OrderCompleteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0D929C641A4008F6C84 /* OrderCompleteScreen.swift */; };
+		EDF4A0DC29C68D1B008F6C84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDF4A0DB29C68D1B008F6C84 /* GoogleService-Info.plist */; };
+		EDF4A0DE29C69684008F6C84 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0DD29C69684008F6C84 /* AuthViewModel.swift */; };
+		EDF4A0E029C69A3C008F6C84 /* AuthenticatedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4A0DF29C69A3C008F6C84 /* AuthenticatedScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7EE58A45E03CD9B315AF84D /* Pods-RU-EST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RU-EST.release.xcconfig"; path = "Target Support Files/Pods-RU-EST/Pods-RU-EST.release.xcconfig"; sourceTree = "<group>"; };
+		E513533BBA7198FE93335288 /* Pods-RU-EST.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RU-EST.debug.xcconfig"; path = "Target Support Files/Pods-RU-EST/Pods-RU-EST.debug.xcconfig"; sourceTree = "<group>"; };
+		EDC996D029D1304A00FDA6CD /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		EDC996D229D1309000FDA6CD /* RUEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUEndpoints.swift; sourceTree = "<group>"; };
+		EDC996D429D131B900FDA6CD /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		EDC996D729D131ED00FDA6CD /* RUServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUServices.swift; sourceTree = "<group>"; };
+		EDC996DC29D13E6700FDA6CD /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		EDF4A09529AC3F77008F6C84 /* RU-EST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RU-EST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF4A09829AC3F77008F6C84 /* RU_ESTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RU_ESTApp.swift; sourceTree = "<group>"; };
 		EDF4A09C29AC3F79008F6C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +73,10 @@
 		EDF4A0D429C639DE008F6C84 /* PaymentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentScreen.swift; sourceTree = "<group>"; };
 		EDF4A0D629C63CE3008F6C84 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		EDF4A0D929C641A4008F6C84 /* OrderCompleteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompleteScreen.swift; sourceTree = "<group>"; };
+		EDF4A0DB29C68D1B008F6C84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDF4A0DD29C69684008F6C84 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		EDF4A0DF29C69A3C008F6C84 /* AuthenticatedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedScreen.swift; sourceTree = "<group>"; };
+		F11DD0512748DB056A870D85 /* Pods_RU_EST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RU_EST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,17 +84,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637CF83CA07085B78D356AA8 /* Pods_RU_EST.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3723BA8F62B8A45BF46C34E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F11DD0512748DB056A870D85 /* Pods_RU_EST.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DCC0365F580D83EAEBBCACF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E513533BBA7198FE93335288 /* Pods-RU-EST.debug.xcconfig */,
+				C7EE58A45E03CD9B315AF84D /* Pods-RU-EST.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDC996CF29D1303500FDA6CD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EDC996D029D1304A00FDA6CD /* Endpoint.swift */,
+				EDC996D229D1309000FDA6CD /* RUEndpoints.swift */,
+				EDC996D429D131B900FDA6CD /* HTTPClient.swift */,
+				EDC996D629D131DB00FDA6CD /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EDC996D629D131DB00FDA6CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EDC996D729D131ED00FDA6CD /* RUServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		EDF4A08C29AC3F77008F6C84 = {
 			isa = PBXGroup;
 			children = (
 				EDF4A09729AC3F77008F6C84 /* RU-EST */,
 				EDF4A09629AC3F77008F6C84 /* Products */,
+				7DCC0365F580D83EAEBBCACF /* Pods */,
+				3723BA8F62B8A45BF46C34E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,12 +148,14 @@
 		EDF4A09729AC3F77008F6C84 /* RU-EST */ = {
 			isa = PBXGroup;
 			children = (
+				EDC996CF29D1303500FDA6CD /* Network */,
 				EDF4A0AC29B2FBEC008F6C84 /* Util */,
 				EDF4A0A929B2FB41008F6C84 /* Extensions */,
 				EDF4A0B729B5B306008F6C84 /* Model */,
 				EDF4A0BC29C54604008F6C84 /* Components */,
 				EDF4A0A629B2F96C008F6C84 /* Screen */,
 				EDF4A09829AC3F77008F6C84 /* RU_ESTApp.swift */,
+				EDF4A0DB29C68D1B008F6C84 /* GoogleService-Info.plist */,
 				EDF4A09C29AC3F79008F6C84 /* Assets.xcassets */,
 				EDF4A09E29AC3F79008F6C84 /* Preview Content */,
 			);
@@ -113,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				EDF4A0BA29C53D9B008F6C84 /* LaunchScreen.swift */,
+				EDF4A0DD29C69684008F6C84 /* AuthViewModel.swift */,
+				EDF4A0DF29C69A3C008F6C84 /* AuthenticatedScreen.swift */,
 				EDF4A0B129B5B255008F6C84 /* Login */,
 				EDF4A0B229B5B271008F6C84 /* Orders */,
 				EDF4A0C229C5590D008F6C84 /* Scan */,
@@ -164,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				EDF4A0B829B5B314008F6C84 /* Order.swift */,
+				EDC996DC29D13E6700FDA6CD /* Customer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDF4A0A329AC3F79008F6C84 /* Build configuration list for PBXNativeTarget "RU-EST" */;
 			buildPhases = (
+				1413A197B5285F958BC97564 /* [CP] Check Pods Manifest.lock */,
 				EDF4A09129AC3F77008F6C84 /* Sources */,
 				EDF4A09229AC3F77008F6C84 /* Frameworks */,
 				EDF4A09329AC3F77008F6C84 /* Resources */,
+				5FCDD7FC12DB1EBD1268B799 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,10 +354,53 @@
 			files = (
 				EDF4A0A029AC3F79008F6C84 /* Preview Assets.xcassets in Resources */,
 				EDF4A09D29AC3F79008F6C84 /* Assets.xcassets in Resources */,
+				EDF4A0DC29C68D1B008F6C84 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1413A197B5285F958BC97564 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RU-EST-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FCDD7FC12DB1EBD1268B799 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RU-EST/Pods-RU-EST-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RU-EST/Pods-RU-EST-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RU-EST/Pods-RU-EST-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDF4A09129AC3F77008F6C84 /* Sources */ = {
@@ -300,24 +409,31 @@
 			files = (
 				EDF4A09929AC3F77008F6C84 /* RU_ESTApp.swift in Sources */,
 				EDF4A0C129C546D9008F6C84 /* Date+Extensions.swift in Sources */,
+				EDC996D529D131B900FDA6CD /* HTTPClient.swift in Sources */,
 				EDF4A0AE29B2FC03008F6C84 /* HexColor.swift in Sources */,
 				EDF4A0C629C56F0F008F6C84 /* BarCodeScannerView.swift in Sources */,
+				EDC996DD29D13E6700FDA6CD /* Customer.swift in Sources */,
+				EDF4A0DE29C69684008F6C84 /* AuthViewModel.swift in Sources */,
 				EDF4A0BF29C54636008F6C84 /* OrderCell.swift in Sources */,
 				EDF4A0D029C62651008F6C84 /* ConfirmOrderScreen.swift in Sources */,
 				EDF4A0BB29C53D9B008F6C84 /* LaunchScreen.swift in Sources */,
 				EDF4A0B929B5B314008F6C84 /* Order.swift in Sources */,
 				EDF4A0D529C639DE008F6C84 /* PaymentScreen.swift in Sources */,
+				EDC996D129D1304A00FDA6CD /* Endpoint.swift in Sources */,
 				EDF4A0C829C57CAD008F6C84 /* ScanOverlay.swift in Sources */,
+				EDC996D329D1309000FDA6CD /* RUEndpoints.swift in Sources */,
 				EDF4A0CA29C57E8B008F6C84 /* LoadingView.swift in Sources */,
 				EDF4A0D229C636AA008F6C84 /* View+Extensions.swift in Sources */,
 				EDF4A0A829B2F9AB008F6C84 /* LoginScreen.swift in Sources */,
 				EDF4A0B029B2FDB0008F6C84 /* LoginViewModel.swift in Sources */,
 				EDF4A0DA29C641A4008F6C84 /* OrderCompleteScreen.swift in Sources */,
 				EDF4A0C429C5591F008F6C84 /* ScanScreen.swift in Sources */,
+				EDF4A0E029C69A3C008F6C84 /* AuthenticatedScreen.swift in Sources */,
 				EDF4A0B429B5B29C008F6C84 /* OrdersScreen.swift in Sources */,
 				EDF4A0D729C63CE3008F6C84 /* Sizes.swift in Sources */,
 				EDF4A0B629B5B2CC008F6C84 /* OrdersViewModel.swift in Sources */,
 				EDF4A0AB29B2FB52008F6C84 /* Color+Extensions.swift in Sources */,
+				EDC996D829D131ED00FDA6CD /* RUServices.swift in Sources */,
 				EDF4A0CD29C62224008F6C84 /* ScanViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +557,7 @@
 		};
 		EDF4A0A429AC3F79008F6C84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E513533BBA7198FE93335288 /* Pods-RU-EST.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,8 +571,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +588,7 @@
 		};
 		EDF4A0A529AC3F79008F6C84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7EE58A45E03CD9B315AF84D /* Pods-RU-EST.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -484,8 +602,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
